@@ -1,0 +1,54 @@
+class College
+{
+    constructor(){
+    console.log("College class invoked");
+    }
+}
+class Faculty extends College
+{
+    constructor(){
+        super();
+    console.log("Faculty class invoked");
+    }
+}
+class Student extends College
+{
+    constructor(){
+        super();
+    console.log("Student class invoked");
+    }
+}
+class permFaculty extends Faculty
+{
+    constructor(){
+        super();
+    console.log("permFaculty class invoked");
+    }
+}
+class tempFaculty extends Faculty
+{
+    constructor(){
+        super();
+    console.log("tempFaculty class invoked");
+    }
+}
+class regStudent extends Student
+{
+    constructor(){
+        super();
+    console.log("regStudent class invoked");
+    }
+}
+class privStudent extends Student
+{
+    constructor(){
+        super();
+    console.log("privStudent class invoked");
+    }
+}
+var pF= new permFaculty();
+var tF= new tempFaculty();
+var rS= new regStudent();
+var pS= new privStudent();
+
+ 
